@@ -11,7 +11,7 @@ enum LogOptions {
 impl FromStr for LogOptions {
     type Err = ();
 
-    fn from_str(s: &str) -> Result<Options, ()> {
+    fn from_str(s: &str) -> Result<LogOptions, ()> {
         match s {
             "debug" => Ok(LogOptions::Debug),
             "info" => Ok(LogOptions::Info),
