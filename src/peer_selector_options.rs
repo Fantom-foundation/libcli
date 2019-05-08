@@ -11,11 +11,11 @@ impl FromStr for PeerSelectorOptions {
 
     fn from_str(s: &str) -> Result<PeerSelectorOptions, ()> {
         match s {
-            "random" => Ok(PeerSelectorOptions::Debug),
-            "smart" => Ok(PeerSelectorOptions::Info),
-            "fair" => Ok(PeerSelectorOptions::Warn),
-            "unfair" => Ok(PeerSelectorOptions::Error),
-            "franky" => Ok(PeerSelectorOptions::Fatal),
+            "random" => Ok(PeerSelectorOptions::Random),
+            "smart" => Ok(PeerSelectorOptions::Smart),
+            "fair" => Ok(PeerSelectorOptions::Fair),
+            "unfair" => Ok(PeerSelectorOptions::Unfair),
+            "franky" => Ok(PeerSelectorOptions::Franky),
             _ => Err(()),
         }
     }
