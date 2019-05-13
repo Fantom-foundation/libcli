@@ -1,11 +1,10 @@
-
 enum LogOptions {
     Debug,
     Info,
     Warn,
     Error,
     Fatal,
-    Paniic
+    Paniic,
 }
 
 impl FromStr for LogOptions {
